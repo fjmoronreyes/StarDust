@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "stardust"
+version = "0.1.0"
+description = "Python library for managing a personal collection of books and manga with CRUD, tagging, and search."
+authors = ["fcojmoron"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "stardust" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0"
+ruff = "^0.6"
+
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
